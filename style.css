@@ -4,6 +4,9 @@
   --table-header-color: #04AA6D;
   --table-hover: #ddd;
   --table-even-color: #f2f2f2;
+  --button-hover: #0ec783;
+  --button-active: #028555;
+  --button-shadow: #666;
 }
 
 :not(.code-ucsd) {
@@ -158,6 +161,16 @@ button{
   font-weight: bold;
   font-size: 20px;
   margin-left:20px;
+}
+
+button:hover {
+  background-color: var(--button-hover);
+}
+
+button:active {
+  background-color: var(--button-active);
+  box-shadow: 0 5px var(--button-shadow);
+  transform: translateY(4px);
 }
 
 @media only screen and (max-width: 760px) {
