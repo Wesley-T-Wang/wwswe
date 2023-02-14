@@ -1,0 +1,181 @@
+:root {
+  --nav-color: #333;
+  --nav-hover: #111;
+  --table-header-color: #04AA6D;
+  --table-hover: #ddd;
+  --table-even-color: #f2f2f2;
+}
+
+:not(.code-ucsd) {
+  font-family: 'Roboto', sans-serif;
+}
+
+#intro {
+  margin-top: 50px;
+}
+
+.whizara-large {
+  margin-left:-50px;
+}
+
+#navbar {
+  position: fixed;
+  overflow-x: scroll;
+  list-style-type: none;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  min-width: 600px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--nav-color);
+  z-index: 1;
+}
+
+.greeting {
+  margin-right: 10%;
+  vertical-align: top;
+  float: left;
+}
+
+.greeting-text{
+  margin-top: 0px;
+}
+
+.ucsd {
+  display: inline;
+}
+
+.ucsd-date {
+  display: inline;
+  margin-left: 100px;
+}
+
+.course-list {
+  float: left;
+}
+
+.course {
+  width: 100%;
+  height: 5em;
+}
+
+.nav-item {
+  float: left;
+}
+
+.nav-item a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  background-color: var(--nav-hover);
+}
+
+.flex-container {
+  display: flex;
+}
+
+code {
+  margin-top: 3em;
+  margin-right: 5em;
+}
+
+.new-grad{
+  max-width: 30em;
+}
+
+#tech-stack{
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#tech-stack td, #tech-stack th {
+  border: 1px solid var(--table-hover);
+  padding: 8px;
+}
+
+#tech-stack tr:nth-child(even) {
+  background-color: var(--table-even-color);
+}
+
+#tech-stack tr:hover {
+  background-color: var(--table-hover);
+}
+
+#tech-stack th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: var(--table-header-color);
+  color: white;
+}
+
+.link {
+  font-size: 2rem;
+  box-shadow: inset 0 0 0 0 var(--table-header-color);
+  color: var(--table-header-color);
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.link:hover {
+  box-shadow: inset 300px 0 0 0 var(--table-header-color);
+  color: white;
+}
+
+#links{
+  display:flex;
+  justify-content: space-evenly;
+}
+
+footer{
+  margin-bottom:50px;
+}
+
+a {
+  text-decoration: none;
+}
+
+#subject{
+  margin-top:20px;
+  height: 100px;
+  width: 500px;
+}
+
+button{
+  background-color: var(--table-header-color);
+  border:none;
+  color:white;
+  padding:15px 32px;
+  border-radius:10px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left:20px;
+}
+
+@media only screen and (max-width: 760px) {
+  .ucsd-date{
+    display:block;
+    margin-left:0px;
+  }
+}
+
+@media only screen and (max-width: 447px) {
+  .course{
+    height:10em;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .link{
+    font-size:1em;
+    font-weight:100;
+  }
+}

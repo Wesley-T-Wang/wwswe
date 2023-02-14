@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Wesley Wang Software Engineer</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+      rect {
+        fill: #ffcd00;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script src="/script.js"></script>
+
+    <header>
+      <nav>
+        <ul id="navbar">
+          <li class="nav-item"><a href="#intro">Home</a></li>
+          <li class="nav-item"><a href="#education">Education</a></li>
+          <li class="nav-item"><a href="#projects">Projects</a></li>
+          <li class="nav-item"><a href="#tech-stack">Tech Stack</a></li>
+          <li class="nav-item"><a href="#contact-me">Contact</a></li>
+          <li class="nav-item"><a href="#links">Links</a></li>
+        </ul>
+      </nav>
+    </header>
+    <br />
+
+    <section id="intro">
+      <div id="headline-pic">
+        <div class="greeting">
+          <h1 class="greeting-text">Hi, my name is Wesley Wang</h1>
+          <audio
+            class="pronunciation"
+            controls
+            src="/WesleyWangPronunciation.mp3"
+          ></audio>
+          <p class="new-grad">
+            I am a Fourth Year Computer Engineering major at The University of
+            California San Diego looking for
+            <strong>New Grad Software Engineering Positions.</strong>
+          </p>
+        </div>
+
+        <picture id="picture-self">
+          <source
+            height="1000px"
+            media="(min-width:1000px)"
+            srcset="/GWesleyHighRes.jpg"
+          />
+          <source
+            height="600px"
+            media="(min-width:465px)"
+            srcset="/GWesleyHighRes.jpg"
+          />
+          <img src="/WesleyG.png" alt="Picture of Wesley Wang" />
+        </picture>
+      </div>
+    </section>
+    <br />
+    <hr />
+
+    <section id="education">
+      <h2>Education</h2>
+      <span>
+        <h3 class="ucsd">
+          University of California San Diego, B.S. Computer Engineering
+        </h3>
+        <p class="ucsd-date"><i>2019-2023</i></p>
+      </span>
+      <p>Relevant Coursework</p>
+      <div class="course">
+        <ol class="course-list">
+          <li>Data Structures</li>
+          <li>Operating Systems</li>
+          <li>Database Principles</li>
+        </ol>
+
+        <ol class="course-list" start="4">
+          <li>Discrete Math and Algorithms</li>
+          <li>Human Computer Interaction</li>
+          <li>AI Search and Reasoning</li>
+        </ol>
+      </div>
+    </section>
+    <br />
+    <hr />
+
+    <main id="work-experience">
+      <h2>Work Experience</h2>
+      <picture>
+        <source
+          width="300"
+          media="(min-width:1000px)"
+          srcset="/google-large-logo.png"
+        />
+        <source media="(min-width:465px)" srcset="/google-small-logo.png" />
+        <img src="/google-small-logo.png" alt="Google Logo" />
+      </picture>
+      <ul>
+        <li>
+          <p>
+            Provided Google Voice Assistant Developers with a means of managing
+            thousands of test accounts for Voice Assistant test simulations.
+            Reduced debugging process from days to seconds for
+            <strong> 20 daily active users.</strong>
+          </p>
+        </li>
+        <li>
+          <p>
+            <em>Created the Sim-Eng Manager</em>, a web application developed
+            with <strong>Angular, HTML, SCSS, and Typescript</strong> in the
+            front end to make requests to RPC endpoints in 2
+            <strong>C++ back ends.</strong>
+          </p>
+        </li>
+        <li>
+          <p>
+            Achieved <strong> 100% code coverage</strong> across
+            <strong> C++ Unit tests</strong> for back end services and
+            <strong>Typescript Unit Tests </strong>
+            for Angular components.
+          </p>
+        </li>
+      </ul>
+
+      <picture>
+        <source
+          width="300"
+          media="(min-width:1000px)"
+          srcset="/ascend-learning-large-logo.png"
+        />
+        <source
+          width="200"
+          media="(min-width:465px)"
+          srcset="/ascend-small-logo.png"
+        />
+        <img src="/ascend-small-logo.png" alt="Ascend Learning Logo" />
+      </picture>
+      <ul>
+        <li>
+          <p>
+            Worked closely alongside a team of 30 software engineers and
+            participated in fullstack development
+            <strong
+              >(Angular, HTML, SCSS, Typescript, SQL Server, C#, EF/.NET
+              Core)</strong
+            >
+            of ATI Testing's assessment software for nursing students
+            nationwide.
+          </p>
+        </li>
+        <li>
+          <p>
+            Wrote <strong>Angular unit testing files</strong> and resolved
+            consumer reported bugs and Jira tickets throughout development of
+            company software
+          </p>
+        </li>
+        <li>
+          <p>
+            Designed, developed, and deployed the <em>Bulletin Buddy</em> as an
+            intern project.
+          </p>
+        </li>
+      </ul>
+
+      <picture>
+        <source
+          id="whizara-large"
+          width="300"
+          media="(min-width:1000px)"
+          srcset="/whizara-large-logo.webp"
+        />
+        <source
+          width="200"
+          media="(min-width:465px)"
+          srcset="/whizara-small-logo.png"
+        />
+        <img src="/whizara-small-logo.png" alt="Whizara Logo" />
+      </picture>
+      <ul>
+        <li>
+          <p>
+            Instructed full courses on
+            <strong>HTML, CSS, Javascript, Java, Python, and C++ </strong>in 1
+            on 1 settings and classes of up to 20 students.
+          </p>
+        </li>
+        <li>
+          <p>
+            Contracted to teach at a variety of middle and high schools
+            including Silicon Valley High School and Harker K-12.
+          </p>
+        </li>
+      </ul>
+    </main>
+    <br />
+    <hr />
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <h3>Bulletin Buddy</h3>
+      <ul>
+        <li>
+          <p>
+            The Bulletin Buddy is a web application that allows users to join
+            bulletin rooms with friends or team members to make posts and polls
+            using the strawpoll api
+          </p>
+        </li>
+        <li>
+          <p>
+            Developed using
+            <strong>
+              Angular, .Net core, C# ,Typescript, SQL Databases, Postman, and
+              Heroku.
+            </strong>
+          </p>
+        </li>
+        <li>
+          <p>
+            Live demo:
+            <a href="https://wesley-t-wang.github.io/BulletinBuddy/login"
+              >https://wesley-t-wang.github.io/BulletinBuddy/login</a
+            >.
+          </p>
+        </li>
+      </ul>
+      <video controls height="300" src="/BulletinBuddyDemo.mp4"></video>
+
+      <h3>Day.Ly</h3>
+      <ul>
+        <li>
+          <p>
+            Day.ly is an IOS application centered around students in remote
+            learning, scheduling timed pomodoro study sessions and incorporating
+            them into daily routines
+          </p>
+        </li>
+        <li>
+          <p>
+            Programmed in
+            <strong> React Native, Javascript, Redux, Expo, </strong>and planned
+            in Figma.
+          </p>
+        </li>
+        <li>
+          <p>
+            Top 25 Wolfram Alpha Winner at SD Hacks. Video demo:
+            <a href="https://devpost.com/software/day-ly-8qe3iz"
+              >https://devpost.com/software/day-ly-8qe3iz</a
+            >.
+          </p>
+        </li>
+      </ul>
+      <iframe
+        width="786"
+        height="556"
+        src="https://www.youtube.com/embed/ohZUfVPbnO8"
+        title="sd hacks '21 - day.ly"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <h3>Leaflet</h3>
+      <ul>
+        <li>
+          <p>
+            Leaflet is a social media application which offers users in-app
+            rewards for completing environmentally friendly tasks. These can be
+            displayed to friends as an environmentally friendly way to stay
+            connected during the COVID-19 crisis.
+          </p>
+        </li>
+        <li>
+          <p>
+            Coded in
+            <strong> React, Typescript, Firebase, Python Flask </strong> and
+            designed in Figma
+          </p>
+        </li>
+        <li>
+          <p>
+            Won Wolfram Alpha Pro at Citrus Hacks. Video demo here!
+            <a href="https://devpost.com/software/leaflet-uzh7ev"
+              >https://devpost.com/software/leaflet-uzh7ev</a
+            >.
+          </p>
+        </li>
+      </ul>
+      <iframe
+        width="786"
+        height="556"
+        src="https://www.youtube.com/embed/YT1higxDt2E"
+        title="leaflet (citrushack '21)"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <aside>
+        <details>
+          <summary>See More</summary>
+          <h3>John's Jeometry Jumble</h3>
+          <ul>
+            <li>
+              Game built in Java using GUI and a game engine API, first place
+              Winner in Computer Science Final Project Competition.
+            </li>
+            <li>
+              Github Link
+              <a href="https://github.com/Wesley-T-Wang/Jon-s-Jeometry-Jumble"
+                >https://github.com/Wesley-T-Wang/Jon-s-Jeometry-Jumble</a
+              >.
+            </li>
+          </ul>
+          <figure>
+            <figcaption>Screenshot of Gameplay</figcaption>
+          </figure>
+          <h3>Presidential Bias of Tik Toks</h3>
+          <ul>
+            <li>
+              Used <strong>Python Pandas</strong> to train models on a dataset
+              of 10000 tiktoks made during the presidential election to be able
+              to check if a given tiktok has a presidential bias relative to the
+              election.
+            </li>
+          </ul>
+        </details>
+      </aside>
+    </section>
+    <br />
+    <hr />
+
+    <section id="tech-stack">
+      <h2>Tech Stack</h2>
+      <table>
+        <caption>
+          Skills
+        </caption>
+        <colgroup>
+          <col />
+          <col />
+          <col />
+        </colgroup>
+        <tr>
+          <th>Language/Technology</th>
+          <th>Score</th>
+          <th>Experience</th>
+        </tr>
+        <tr>
+          <td>Javascript/Typescript</td>
+          <td>9/10</td>
+          <td>Google,Ascend Learning, Whizara, School Coursework</td>
+        </tr>
+        <tr>
+          <td>C++</td>
+          <td>7/10</td>
+          <td>Google, School Coursework</td>
+        </tr>
+        <tr>
+          <td>Java</td>
+          <td>8/10</td>
+          <td>Whizara, School Coursework, <em>First Language</em></td>
+        </tr>
+        <tr>
+          <td>Python</td>
+          <td>7/10</td>
+          <td>Whizara, School Coursework, Leetcode</td>
+        </tr>
+        <tr>
+          <td>HTML and CSS</td>
+          <td>8/10</td>
+          <td>Google, Ascend Learning, Whizara, School Coursework</td>
+        </tr>
+        <tr>
+          <td>Angular</td>
+          <td>9/10</td>
+          <td>Google, Ascend Learning</td>
+        </tr>
+        <tr>
+          <td>SQL</td>
+          <td>7/10</td>
+          <td>Ascend Learning, School Coursework</td>
+        </tr>
+        <tr>
+          <td>C#/.NET EF Core</td>
+          <td>7/10</td>
+          <td>Ascend Learning</td>
+        </tr>
+      </table>
+      <p>
+        Other Tech: Github/Gitlab, Postman, Heroku, Netlify, Jira, Unix, Bash,
+        React, Figma, Slack
+      </p>
+    </section>
+    <br />
+
+    <footer>
+      <form id="contact-me" action="submit">
+        <fieldset>
+          <legend>
+            <h2>Contact Me</h2>
+          </legend>
+
+          <div id="contact-info">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Name" />
+
+            <label for="method-of-contact">Preferred Means of Contact:</label>
+            <input
+              list="contact-methods"
+              id="method-of-contact"
+              name="method-of-contact"
+            />
+
+            <datalist id="contact-methods">
+              <option value="E-mail"></option>
+              <option value="Phone Call"></option>
+              <option value="Text"></option>
+              <option value="Linkedin"></option>
+            </datalist>
+
+            <label for="address">Address</label>
+            <input
+              type="text"
+              id="address"
+              name="address"
+              placeholder="Email, Phone, etc"
+            />
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <optgroup label="North America">
+                <option value="usa">United States</option>
+                <option value="canada">Canada</option>
+              </optgroup>
+              <option value="australia">Australia</option>
+              <option value="china">China</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <label for="subject">Subject</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Write something.."
+          ></textarea>
+
+          <button type="submit" value="Submit">Submit</button>
+          <!-- Template will render once javascript is added to this site -->
+          <template id="template">
+            <div>Message Sent! I will get back to you shortly!</div>
+          </template>
+        </fieldset>
+      </form>
+      <br />
+
+      <div class="flex-container">
+        <canvas id="canvas"></canvas>
+        <script>
+          const canvas = document.getElementById("canvas");
+          const ctx = canvas.getContext("2d");
+          ctx.fillStyle = "#182B49";
+          ctx.fillRect(0, 0, 150, 100);
+        </script>
+        <pre class="code-ucsd">
+┌┐ ┌┬───┬───┬───┐
+││ ││┌─┐│┌─┐├┐┌┐│
+││ │││ └┤└──┐││││
+││ │││ ┌┼──┐│││││
+│└─┘│└─┘│└─┘├┘└┘│
+└───┴───┴───┴───┘            
+            </pre
+        >
+        <code> Go Tritons! </code>
+        <svg width="150" height="100">
+          <rect width="150" height="100" />
+        </svg>
+      </div>
+      <div id="links">
+        <a class="link"  target="_blank" href="https://www.linkedin.com/in/wesleytwang/"><b>Linkedin</b></a>
+        <a class="link"  target="_blank" href="https://github.com/Wesley-T-Wang"><b>Github</b></a>
+        <a class="link"  target="_blank" href="https://devpost.com/Wesley-T-Wang?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"><b>Devpost</b></a>
+        <a class="link"  target="_blank" href="https://wesley-t-wang.github.io/WesleyWangSWE/#intro"><b>Website</b></a>
+        <a class="link"  target="_blank" href="https://drive.google.com/file/d/1cBP9_On-1QSwgs4c975rwRLdM_xauM1z/view"><b>Resume</b></a>
+      </div>
+    </footer>
+  </body>
+</html>
