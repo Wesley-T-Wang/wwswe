@@ -76,7 +76,7 @@ let blogs = document.getElementById('posts');
 for(let i = 0; i < items.length; i++){
     curr = items[i];
     let node = document.createElement("tr");
-    node.innerHTML = `<td>${curr[0]}</td><td>${curr[1]}</td><td>${curr[2]}</td><td><button onclick="editRow(['${curr[0]}', '${curr[1]}', '${curr[2]}'])" style="margin: 5px;"><i class='fas fa-pencil-alt'></i></button><button onclick="deleteRow(['${curr[0]}', '${curr[1]}', '${curr[2]}'])" style="margin: 5px;"><i class='fas fa-trash-alt'></i></button></td>`;
+    node.innerHTML = `<td>${curr[0]}</td><td>${curr[1]}</td><td>${curr[2]}</td><td><button onclick="editRow(['${curr[0]}', '${curr[1]}', '${curr[2]}'])" style="margin: 5px;"><i class='fas fa-pencil-alt'></i></button><button onclick="deleteRow(['${curr[0]}', '${curr[1]}', '${curr[2]}'])" style="margin: 5px;">delete</button></td>`;
     blogs.appendChild(node);
 }
 
