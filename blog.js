@@ -67,10 +67,10 @@
 //     esummary.value = '';
 // });
 
-items = [['hello', 'hi', 'helo']];
-// if(localStorage.getItem('posts')){
-//     items = JSON.parse(localStorage.getItem('posts'));
-// }
+items = [];
+if(localStorage.getItem('posts')){
+    items = JSON.parse(localStorage.getItem('posts'));
+}
 
 let blogs = document.getElementById('posts');
 for(let i = 0; i < items.length; i++){
@@ -88,18 +88,18 @@ for(let i = 0; i < items.length; i++){
 //     localStorage.setItem('posts', JSON.stringify(items));
 // }
 
-// function deleteRow(row){
-//     let index = -1;
-//     for(let i = 0; i < items.length; i ++){
-//         if(row[0]===items[i][0] && row[1] === items[i][1] && row[2] === items[i][2]){
-//             index = i;
-//         }
-//     }
-//     let j = blogs.childNodes[index + 2];
-//     blogs.removeChild(j);
-//     items.splice(index, 1);
-//     localStorage.setItem('posts', JSON.stringify(items));
-// }
+function deleteRow(row){
+    let index = -1;
+    for(let i = 0; i < items.length; i ++){
+        if(row[0]===items[i][0] && row[1] === items[i][1] && row[2] === items[i][2]){
+            index = i;
+        }
+    }
+    let j = blogs.childNodes[index + 2];
+    blogs.removeChild(j);
+    items.splice(index, 1);
+    localStorage.setItem('posts', JSON.stringify(items));
+}
 
 // function editRow(row){
 //     etitle.value = row[0];
