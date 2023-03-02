@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VS3QT6VT9X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+    
+        gtag('config', 'G-VS3QT6VT9X');
+    </script>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://kit.fontawesome.com/20fb607f3f.js" crossorigin="anonymous"></script>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+    <title></title>
+</head>
+
+<body>
+    <h1>Wesley Wang CSE 134b HW 4</h1>
+    <a href="https://playful-blancmange-9589e6.netlify.app/">https://playful-blancmange-9589e6.netlify.app/</a>
+    <br>
+    <a href="https://github.com/Wesley-T-Wang/wwswe">https://github.com/Wesley-T-Wang/wwswe</a>
+    <br>
+    <br>
+    <h3>Blog Posts</h3>
+    <div>
+        <table id="posts">
+            <tr>
+                <th>Title</th>
+                <th>Date</th>
+                <th>Summary</th>
+                <th>Actions</th>
+            </tr>
+        </table>
+    </div>
+    <dialog id="pDialog">
+        <form method="dialog">
+            <p>
+                <label for="title">
+                    Title:
+                    <input name="title" id="title" type="text">
+                </label>
+                <label for="date">
+                    Date:
+                    <input type="date" name="date" id="date">
+                </label>
+                <br>
+                <label for="summary">
+                    Summary:
+                    <textarea style="margin-top:15px;" name="summary" id="summary" cols="38" rows="2"></textarea>
+                </label>
+            </p>
+            <button id="pconfirm">Ok</button>
+            <button id="pcancel">Cancel</button>
+        </form>
+    </dialog>
+
+    <dialog id="eDialog">
+        <form method="dialog">
+            <p>
+                <label for="etitle">
+                    Title:
+                    <input name="etitle" id="etitle" type="text">
+                </label>
+                <label for="edate">
+                    Date:
+                    <input type="date" name="edate" id="edate">
+                </label>
+                <br>
+                <label for="esummary">
+                    Summary:
+                    <textarea style="margin-top:15px;" name="esummary" id="esummary" cols="38" rows="2"></textarea>
+                </label>
+            </p>
+            <button id="econfirm">Ok</button>
+            <button id="ecancel">Cancel</button>
+        </form>
+    </dialog>
+    <p>
+        <button id="pshow">Add Post</button>
+    </p>
+    <script src="/blog.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.1/purify.min.js"></script>
+</body>
+
+</html>
