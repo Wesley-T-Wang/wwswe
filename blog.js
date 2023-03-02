@@ -46,26 +46,26 @@ let econfirm = document.getElementById('econfirm');
 let ecancel = document.getElementById('ecancel');
 let currentRow;
 
-econfirm.addEventListener('click', () => {
-    let t = etitle.value;
-    let d = edate.value;
-    let s = esummary.value;
-    if(t === '' || d === '' || s=== ''){
-        alert('Make sure to fill out all fields!')
-    } else {
-        let i = [t, d, s];
-        submitEdit(currentRow, i);
-        etitle.value = '';
-        edate.value = '';
-        esummary.value = '';
-    }
-});
+// econfirm.addEventListener('click', () => {
+//     let t = etitle.value;
+//     let d = edate.value;
+//     let s = esummary.value;
+//     if(t === '' || d === '' || s=== ''){
+//         alert('Make sure to fill out all fields!')
+//     } else {
+//         let i = [t, d, s];
+//         submitEdit(currentRow, i);
+//         etitle.value = '';
+//         edate.value = '';
+//         esummary.value = '';
+//     }
+// });
 
-ecancel.addEventListener('click', () => {
-    etitle.value = '';
-    edate.value = '';
-    esummary.value = '';
-});
+// ecancel.addEventListener('click', () => {
+//     etitle.value = '';
+//     edate.value = '';
+//     esummary.value = '';
+// });
 
 items = [];
 if(localStorage.getItem('posts')){
