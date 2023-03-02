@@ -67,10 +67,10 @@
 //     esummary.value = '';
 // });
 
-items = [];
-if(localStorage.getItem('posts')){
-    items = JSON.parse(localStorage.getItem('posts'));
-}
+items = [['hello', 'hi', 'helo']];
+// if(localStorage.getItem('posts')){
+//     items = JSON.parse(localStorage.getItem('posts'));
+// }
 
 let blogs = document.getElementById('posts');
 for(let i = 0; i < items.length; i++){
