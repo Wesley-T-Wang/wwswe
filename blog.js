@@ -89,7 +89,7 @@ function addRow(row){
 }
 
 function deleteRow(row){
-    let index = -1
+    let index = -1;
     for(let i = 0; i < items.length; i ++){
         if(row[0]===items[i][0] && row[1] === items[i][1] && row[2] === items[i][2]){
             index = i;
@@ -110,7 +110,7 @@ function editRow(row){
 }
 
 function submitEdit(row, newRow){
-    let index = -1
+    let index = -1;
     for(let i = 0; i < items.length; i ++){
         if(row[0]===items[i][0] && row[1] === items[i][1] && row[2] === items[i][2]){
             index = i;
