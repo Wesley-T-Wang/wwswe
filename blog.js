@@ -1,50 +1,50 @@
-let pshow = document.getElementById('pshow');
-let pDialog = document.getElementById('pDialog');
-let title = document.getElementById('title');
-let date = document.getElementById('date');
-let summary = document.getElementById('summary');
-let pconfirm = document.getElementById('pconfirm');
-let pcancel = document.getElementById('pcancel');
+// let pshow = document.getElementById('pshow');
+// let pDialog = document.getElementById('pDialog');
+// let title = document.getElementById('title');
+// let date = document.getElementById('date');
+// let summary = document.getElementById('summary');
+// let pconfirm = document.getElementById('pconfirm');
+// let pcancel = document.getElementById('pcancel');
 
-pshow.addEventListener('click', () => {
-    pDialog.showModal();
-});
+// pshow.addEventListener('click', () => {
+//     pDialog.showModal();
+// });
 
-pconfirm.addEventListener('click', () => {
-    let t = title.value;
-    let d = date.value;
-    let s = summary.value;
-    if(t === '' || d === '' || s=== ''){
-        alert('Make sure to fill out all fields!')
-    } else {
-        let i = [t, d, s];
-        addRow(i);
-        title.value = '';
-        date.value = '';
-        summary.value = '';
-    }
-});
+// pconfirm.addEventListener('click', () => {
+//     let t = title.value;
+//     let d = date.value;
+//     let s = summary.value;
+//     if(t === '' || d === '' || s=== ''){
+//         alert('Make sure to fill out all fields!')
+//     } else {
+//         let i = [t, d, s];
+//         addRow(i);
+//         title.value = '';
+//         date.value = '';
+//         summary.value = '';
+//     }
+// });
 
-pcancel.addEventListener('click', () => {
-    title.value = '';
-    date.value = '';
-    summary.value = '';
-});
+// pcancel.addEventListener('click', () => {
+//     title.value = '';
+//     date.value = '';
+//     summary.value = '';
+// });
 
-pDialog.addEventListener('close', ()=>{
-    title.value = '';
-    date.value = '';
-    summary.value = '';
-});
+// pDialog.addEventListener('close', ()=>{
+//     title.value = '';
+//     date.value = '';
+//     summary.value = '';
+// });
 
-let eshow = document.getElementById('eshow');
-let eDialog = document.getElementById('eDialog');
-let etitle = document.getElementById('etitle');
-let edate = document.getElementById('edate');
-let esummary = document.getElementById('esummary');
-let econfirm = document.getElementById('econfirm');
-let ecancel = document.getElementById('ecancel');
-let currentRow;
+// let eshow = document.getElementById('eshow');
+// let eDialog = document.getElementById('eDialog');
+// let etitle = document.getElementById('etitle');
+// let edate = document.getElementById('edate');
+// let esummary = document.getElementById('esummary');
+// let econfirm = document.getElementById('econfirm');
+// let ecancel = document.getElementById('ecancel');
+// let currentRow;
 
 // econfirm.addEventListener('click', () => {
 //     let t = etitle.value;
