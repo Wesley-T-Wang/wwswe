@@ -67,7 +67,6 @@ ecancel.addEventListener('click', () => {
     esummary.value = '';
 });
 
-// items = [['hello', 'chicken','4600']];
 items = [];
 let temp = JSON.parse(localStorage.getItem('posts'));
 if(temp.length > 0){
