@@ -80,46 +80,46 @@ for(let i = 0; i < items.length; i++){
     blogs.appendChild(node);
 }
 
-function addRow(row){
-    items.push(row);
-    let node = document.createElement("tr");
-    node.innerHTML = `<td>${row[0]}</td><td>${row[1]}</td><td>${row[2]}</td><td><button style="margin: 5px;" onclick="editRow(['${row[0]}', '${row[1]}', '${row[2]}'])"><i class='fas fa-pencil-alt'></i></button><button onclick="deleteRow(['${row[0]}', '${row[1]}', '${row[2]}'])" style="margin: 5px"><i class='fas fa-trash-alt'></i></button></td>`;
-    blogs.appendChild(node);
-    localStorage.setItem('posts', JSON.stringify(items));
-}
+// function addRow(row){
+//     items.push(row);
+//     let node = document.createElement("tr");
+//     node.innerHTML = `<td>${row[0]}</td><td>${row[1]}</td><td>${row[2]}</td><td><button style="margin: 5px;" onclick="editRow(['${row[0]}', '${row[1]}', '${row[2]}'])"><i class='fas fa-pencil-alt'></i></button><button onclick="deleteRow(['${row[0]}', '${row[1]}', '${row[2]}'])" style="margin: 5px"><i class='fas fa-trash-alt'></i></button></td>`;
+//     blogs.appendChild(node);
+//     localStorage.setItem('posts', JSON.stringify(items));
+// }
 
-function deleteRow(row){
-    let index = -1;
-    for(let i = 0; i < items.length; i ++){
-        if(row[0]===items[i][0] && row[1] === items[i][1] && row[2] === items[i][2]){
-            index = i;
-        }
-    }
-    let j = blogs.childNodes[index + 2];
-    blogs.removeChild(j);
-    items.splice(index, 1);
-    localStorage.setItem('posts', JSON.stringify(items));
-}
+// function deleteRow(row){
+//     let index = -1;
+//     for(let i = 0; i < items.length; i ++){
+//         if(row[0]===items[i][0] && row[1] === items[i][1] && row[2] === items[i][2]){
+//             index = i;
+//         }
+//     }
+//     let j = blogs.childNodes[index + 2];
+//     blogs.removeChild(j);
+//     items.splice(index, 1);
+//     localStorage.setItem('posts', JSON.stringify(items));
+// }
 
-function editRow(row){
-    etitle.value = row[0];
-    edate.value = row[1];
-    esummary.value = row[2];
-    currentRow = row;
-    eDialog.showModal();
-}
+// function editRow(row){
+//     etitle.value = row[0];
+//     edate.value = row[1];
+//     esummary.value = row[2];
+//     currentRow = row;
+//     eDialog.showModal();
+// }
 
-function submitEdit(row, newRow){
-    let index = -1;
-    for(let i = 0; i < items.length; i ++){
-        if(row[0]===items[i][0] && row[1] === items[i][1] && row[2] === items[i][2]){
-            index = i;
-        }
-    }
-    let j = blogs.childNodes[index + 2];
-    items[index][0] = newRow[0];
-    items[index][1] = newRow[1];
-    items[index][2] = newRow[2];
-    j.innerHTML = `<td>${newRow[0]}</td><td>${newRow[1]}</td><td>${newRow[2]}</td><td><button style="margin: 5px;" onclick="editRow(['${newRow[0]}', '${newRow[1]}', '${newRow[2]}'])"><i class='fas fa-pencil-alt'></i></button><button onclick="deleteRow(['${newRow[0]}', '${newRow[1]}', '${newRow[2]}'])" style="margin: 5px"><i class='fas fa-trash-alt'></i></button></td>`;
-    localStorage.setItem('posts', JSON.stringify(items));
-}
+// function submitEdit(row, newRow){
+//     let index = -1;
+//     for(let i = 0; i < items.length; i ++){
+//         if(row[0]===items[i][0] && row[1] === items[i][1] && row[2] === items[i][2]){
+//             index = i;
+//         }
+//     }
+//     let j = blogs.childNodes[index + 2];
+//     items[index][0] = newRow[0];
+//     items[index][1] = newRow[1];
+//     items[index][2] = newRow[2];
+//     j.innerHTML = `<td>${newRow[0]}</td><td>${newRow[1]}</td><td>${newRow[2]}</td><td><button style="margin: 5px;" onclick="editRow(['${newRow[0]}', '${newRow[1]}', '${newRow[2]}'])"><i class='fas fa-pencil-alt'></i></button><button onclick="deleteRow(['${newRow[0]}', '${newRow[1]}', '${newRow[2]}'])" style="margin: 5px"><i class='fas fa-trash-alt'></i></button></td>`;
+//     localStorage.setItem('posts', JSON.stringify(items));
+// }
