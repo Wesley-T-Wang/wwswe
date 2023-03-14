@@ -69,7 +69,7 @@ ecancel.addEventListener('click', () => {
 
 items = [];
 let temp = JSON.parse(localStorage.getItem('posts'));
-if(temp.length > 0){
+if(temp){
     items = temp;
 }
 
